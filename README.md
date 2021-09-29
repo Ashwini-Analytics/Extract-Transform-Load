@@ -5,6 +5,11 @@ This project will focus on climate change over the years and its impact on natur
 disasters. For this analysis, global temperature rise is used as an indicator of climate change.
 The source of the global temperature data is taken from berkeley earth and Natural disaster
 data is taken from OFDA/CRED International Disaster Database.
+![alt text](https://github.com/Ashwini-Analytics/Extract-Transform-Load/blob/main/Dashboard%201.png)
+
+## Workflow
+This project is deployed using google cloud platform. 
+The project takes the data from data source and publishes it to pub sub and from there the cloud funtion is triggred and data is sent to Cloud Storage. And using a cloud Composer the data is tranferred from GCS to Bigquery using DAG.
 
 ![alt text](https://github.com/Ashwini-Analytics/Extract-Transform-Load/blob/main/Blank%20diagram.png)
 <p align="center">
