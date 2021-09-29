@@ -6,6 +6,10 @@ disasters. For this analysis, global temperature rise is used as an indicator of
 The source of the global temperature data is taken from berkeley earth and Natural disaster
 data is taken from OFDA/CRED International Disaster Database.
 
+![alt text](https://github.com/Ashwini-Analytics/Extract-Transform-Load/blob/main/Blank%20diagram.png)
+<p align="center">
+    <strong> ETL Diagram </strong>
+</p>
 
 
 ## Cloud-Storage-Pubsub
