@@ -1,5 +1,11 @@
 # Extract-Transform-Load
 
+## Case Study
+This project will focus on climate change over the years and its impact on natural
+disasters. For this analysis, global temperature rise is used as an indicator of climate change.
+The source of the global temperature data is taken from berkeley earth and Natural disaster
+data is taken from OFDA/CRED International Disaster Database.
+
 ## Cloud-Storage-Pubsub
 Developed a containerized service which publishes a data as a message to pub sub and then push the container image to GCR and deploy  service using GKE
 
