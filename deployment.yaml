@@ -13,14 +13,24 @@ spec:
       labels:
         app: hello
     spec:
+      volumes:
+      - name: google-cloud-key
+        secret:
+          secretName: pubsub-key
       containers:
       - name: capstone-app
         # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
         # Replace $GCLOUD_PROJECT with your project ID.
         image: us-west2-docker.pkg.dev/capstone-327117/capstone-repo/capstone:latest
+        # create a service account key with pub sub and then run this kubectl create secret generic pubsub-key --from-file=key.json=PATH-TO-KEY-FILE.json
+        volumeMounts:
+        - name: google-cloud-key
+          mountPath: /var/secrets/google
         # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8080
         env:
           - name: PORT
             value: "8080"
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: /var/secrets/google/key.json
