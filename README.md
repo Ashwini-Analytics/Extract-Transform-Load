@@ -25,7 +25,7 @@ Developed a containerized service which publishes a data as a message to pub sub
 
 ``` bash 
 
-http://http://34.94.84.211/
+http://34.94.84.211/
 
 ```
 ### Before you begin
